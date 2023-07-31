@@ -31,6 +31,7 @@ import { ProductShellComponent } from './products/product-shell/product-shell.co
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { CommonModule } from '@angular/common';
 
 export const metaReducers: MetaReducer<any>[] = !environment.production ? [] : [];
 
@@ -40,6 +41,7 @@ export const metaReducers: MetaReducer<any>[] = !environment.production ? [] : [
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(ProductData),
     UserModule,
+    CommonModule,
     AppRoutingModule,
     SharedModule,
     StoreModule.forFeature('products', productReducer),
