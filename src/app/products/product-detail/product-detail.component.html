@@ -1,0 +1,24 @@
+<div class='row'>
+
+  <button class="btn btn-light" type="button" (click)="checkChangedFilter()">
+    show filter
+  </button>
+  
+  {{displayFilter$ | async}}
+  {{displayDescription$ | async}}
+  {{product | json}}
+
+<div class="col-md-12">
+    <pm-product-edit [selectedProduct]="product"
+                     [errorMessage]="errorMessage$ | async"
+                     (clearCurrent)="clearProduct()"
+                     [products]="products$ | async"
+                     (update)="updateProduct($any($event))"
+                     (delete)="deleteProduct($any($event))"
+                     (create)="saveProduct($any($event))">
+    </pm-product-edit>
+  </div>
+</div>
+
+
+
