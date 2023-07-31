@@ -27,11 +27,11 @@
     "bootstrap": "^4.4.1",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
-    "zone.js": "~0.13.1"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1102.19",
-    "@angular/cli": "~11.2.19",
+    "@angular-devkit/build-angular": "~12.2.18",
+    "@angular/cli": "~12.2.18",
     "@angular/compiler-cli": "~16.1.7",
     "@angular/language-service": "~16.1.7",
     "@types/jasmine": "~3.5.0",
